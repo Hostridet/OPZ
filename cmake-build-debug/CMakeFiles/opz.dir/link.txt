@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/opz.dir/main.cpp.o CMakeFiles/opz.dir/opz.cpp.o  -o opz 
