@@ -61,33 +61,25 @@ TEST(tested, t7)
 TEST(tested, t8)
 {
     const char* str;
-    str = "1+2";
+    str = "42/6 + (3 +2 * 4)";
     float result = GetResult(str);
-    ASSERT_FLOAT_EQ(result, 3);
+    ASSERT_FLOAT_EQ(result, 18);
 }
 
 TEST(tested, t9)
 {
     const char* str;
-    str = "1+2";
+    str = "934 - 23 * 23";
     float result = GetResult(str);
-    ASSERT_FLOAT_EQ(result, 3);
+    ASSERT_FLOAT_EQ(result, 405);
 }
 
 TEST(tested, t10)
 {
     const char* str;
-    str = "1+2";
+    str = "1                             + 23           -         54";
     float result = GetResult(str);
-    ASSERT_FLOAT_EQ(result, 3);
-}
-
-TEST(tested, t11)
-{
-    const char* str;
-    str = "1+2";
-    float result = GetResult(str);
-    ASSERT_FLOAT_EQ(result, 3);
+    ASSERT_FLOAT_EQ(result, -30);
 }
 
 
